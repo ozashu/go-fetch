@@ -3,7 +3,7 @@ package router
 import (
 	"github.com/labstack/echo"
 	"github.com/ozashu/go-fetch/handler/api"
-}
+)
 
 // Bind関数を定義。URL に対応するハンドラーをバインドする。
 func Bind(e *echo.Echo) {
