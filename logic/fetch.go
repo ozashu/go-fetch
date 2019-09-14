@@ -35,6 +35,6 @@ func Fetch(url string) (*FetchResponse, error) {
 	}
 	// FetchResponse型の値を作成してそのポインターを返す
 	return &FetchResponse{
-		Body: strign(body),
+		Body: string(body),
 	}, nil
 }
