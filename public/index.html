@@ -1,0 +1,29 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>go-fetch</title>
+    <!-- 入力フォームの横幅を広くするために、申し訳程度の CSS -->
+    <style>
+      body {
+          margin: 8px;
+      }
+      #url {
+          width: calc(100% - 8px);
+      }
+    </style>
+</head>
+<body>
+  <!-- i/fetchに対して POST リクエストを送信するための入力フォームを設置 -->
+  <form method="post" action="/api/fetch">
+    <label>
+        <div>URL</div>
+        <input type="url" id="url" name="url" required autofocus>    
+    </label> 
+    <div>
+        <input type="submit" value="Fetch">
+    </div>
+  </form>
+</body>
+</html>
